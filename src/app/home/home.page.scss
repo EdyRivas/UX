@@ -25,3 +25,35 @@
 #container a {
   text-decoration: none;
 }
+.hola{
+  --background: none;
+  background-image: url(../../images/pawel-czerwinski-63a31EJ4vgI-unsplash.jpg) !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.inputCol{
+  display:flex; 
+  justify-content:center;
+}
+.floatInpt{
+  width:60%;
+  --background:none;
+  background-color:white;
+  color: black;
+  border:2px solid #BD28BD;
+  border-radius: 10px;
+}
+.item-native{
+  border-bottom:none!important;
+  border-bottom: none;
+  border: none;
+}
+.loginBut{
+  background-color: #F772F7;
+  color: white;
+  --background:none;
+  width:60%;
+  border-radius: 10px;
+  margin-top: 5%;
+}

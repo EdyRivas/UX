@@ -6,15 +6,62 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content style="" class="hola" [fullscreen]="true" >
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">  Blank</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
+    <strong >Welcome to Aqua</strong>
+     <!--#region class code  -->
+     <!--class code  --
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-button [routerLink]= "['/details']" >
+      TOUCH ME!!
+    </ion-button>
+    <ion-button (click)='CallAPI()' >
+      7u7 c'on click me!
+    </ion-button>
+    <br>
+    <h2 style="backgorund-color:red;color:blue;">no jala</h2>
+   <h1 >{{response}}</h1> 
+  -->
+     <!--#endregion -->
+    <ion-row>
+      <ion-col class="inputCol">
+        <ion-item class="floatInpt" style="margin-top: 10%;">
+          <ion-label style="border:none" position="floating">
+            Email
+          </ion-label>
+          <ion-input  type="email"  style="border:none">
+
+          </ion-input>
+
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="inputCol">
+        <ion-item class="floatInpt"style="margin-top: 25px;" >
+          <ion-label style="border:none"   position="floating">
+            Password
+          </ion-label>
+          <ion-input type="password" style="border:none">
+
+          </ion-input>
+
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="inputCol">
+        <ion-button [routerLink]= "['/ux-menu']"class="loginBut">Log in</ion-button>
+        </ion-col>
+      </ion-row>
   </div>
 </ion-content>
+  

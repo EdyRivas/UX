@@ -1,0 +1,31 @@
+.background{
+    height: 250px;
+    width: 100%;
+    background-image: url(../../images/pawel-czerwinski-63a31EJ4vgI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 130px 0 0 5px;
+    
+}
+.userImg{
+    display: flex;
+    justify-content: center;
+    padding-top:37px;
+    overflow: hidden;
+    --background:none;
+    background-color: #312433;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    box-shadow: inset -1px 3px 11px 10px rgba(0,0,0,0.46);
+}
+.user{
+    height: 85px;
+    width:  85px;
+    color: lightgrey ;
+}
+.bacc{
+    --background: none;
+    background-color: #312433;
+}

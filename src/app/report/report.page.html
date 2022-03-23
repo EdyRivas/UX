@@ -1,0 +1,49 @@
+<ion-header style=" --background: none; background-color:#F745F7;">
+  <ion-toolbar style=" --background: none; background-color:#F745F7;">
+    <ion-row>
+      <ion-icon [routerLink]= "['/ux-menu']" style="cursor:pointer; color:white; height:25px;width:25px; margin-left: 10px;" name="chevron-back-circle"></ion-icon>
+      <ion-title>report</ion-title>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col size="12" style="display:flex; justify-content:center;">
+      <ion-row style="margin-top: 12px;">
+      People that have dificulties  
+      <br>|
+      to use apps (30%)
+    </ion-row>
+    <ion-row>
+      <div class="piechart"></div>
+    </ion-row>
+    <ion-row style="margin-top: 12px;">
+      people who do not use apps
+      <br>
+      because they are <br> difficult to use (15%) 
+      <div style="margin-top: 25%;">
+        People that have not <br>  dificulties while<br>
+         using apps (55%)
+      </div>
+    </ion-row>
+    
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col style="padding:20px">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </ion-col>
+  </ion-row>
+</ion-content>
+<style>
+  .piechart {
+      width: 270px;
+      height: 270px;
+      border-radius: 50%;
+      background-image: conic-gradient(
+          #D8BDFF  70deg, 
+          #D202FF 0 235deg, 
+          #FFBDF3 0);
+  }
+</style>

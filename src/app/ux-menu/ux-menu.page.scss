@@ -1,0 +1,76 @@
+.botonMenu{
+    --ackground:none;
+    background-color: transparent;
+    height: 35px;
+    width: 35px;
+}
+.ItemMenu{
+    height: 100%;
+    width: 100%;
+}
+.SideContent{
+    height: 100%;
+    --background:none;
+    background-color:white;
+}
+.blurredBackg{
+    height: 125px;
+    width: 100%;
+    background-image:  url(https://images.pexels.com/photos/1957693/pexels-photo-1957693.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    display: flex;
+    padding-left: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.profileImg{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 45px;
+    width:45px;
+    border-radius: 50px;
+    background-image: url(https://media.istockphoto.com/photos/millennial-male-team-leader-organize-virtual-workshop-with-employees-picture-id1300972574?b=1&k=20&m=1300972574&s=170667a&w=0&h=2nBGC7tr0kWIU8zRQ3dMg-C5JLo9H2sNUuDjQ5mlYfo=);
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+}
+.USerName{
+    margin-top: auto;
+    margin-bottom: 25px;
+    color: white;
+    font-size:14px;
+    
+}
+.varIcons{
+  color: black !important;
+  transition: color .3s;
+}
+.textButt{
+    transition: color .3s;
+}
+.container{
+    margin-top: 5px;
+    border-bottom:2px solid lightgray;
+    transition: border-color .3s;
+}
+.container:hover{
+    cursor:pointer;
+    border-color:rgb(118, 145, 235)!important;
+}
+.container:hover .varIcons{
+        color: rgb(118, 145, 235) !important;
+        
+      }
+      .container:hover .textButt{
+        color: rgb(118, 145, 235)!important;
+    
+      }
+#menuSide{
+    transition: transform .3s, visibility .5s;
+}
+#ItemMenu{
+    transition: transform .3s;
+}
+#pageAll{
+    --background:none;
+    background-color:  #312433;
+    transition: background-color .3s;
+}

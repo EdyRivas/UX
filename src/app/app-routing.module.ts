@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'details',
+    loadChildren: () => import('./details/details.module').then( m => m.DetailsPageModule)
+  },
+  {
+    path: 'ux-menu',
+    loadChildren: () => import('./ux-menu/ux-menu.module').then( m => m.UxMenuPageModule)
+  },
+  {
+    path: 'users',
+    loadChildren: () => import('./users/users.module').then( m => m.UsersPageModule)
+  },
+  {
+    path: 'user-single',
+    loadChildren: () => import('./user-single/user-single.module').then( m => m.UserSinglePageModule)
+  },
+  {
+    path: 'report',
+    loadChildren: () => import('./report/report.module').then( m => m.ReportPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,86 @@
+<ion-header style="--backgroun:none;background-color:#F745F7">
+
+    <ion-row style="display: felx">
+    <button (click)='CLickMenu()' large class="botonMenu" ion-button icon-only menuToggle>
+      <ion-icon id="ItemMenu" class="ItemMenu" name="menu"></ion-icon>
+    </button>
+
+    <ion-title align="center">
+      Main
+    </ion-title>  
+
+    <button align="right" large class="botonMenu" ion-button icon-only menuToggle>
+      <ion-icon class="ItemMenu" name="search"></ion-icon>
+    </button>
+    <button align="center" large class="botonMenu" ion-button icon-only menuToggle>
+      <ion-icon class="ItemMenu" name="ellipsis-vertical-outline"></ion-icon>
+    </button>
+
+  </ion-row> 
+
+
+</ion-header>
+                    
+<ion-content id="pageAll">                   
+  click the hamburger menu
+  <ion-row style="position:relative; visibility: collapse; transform:translate(-280px) !important; height:100%;" id="menuSide" >
+    <ion-col style="padding: 0;" size="5" class="SideContent">
+      <ion-row class="blurredBackg">
+        <ion-row>
+          <div class="profileImg"></div>
+        </ion-row>
+        <ion-row>
+          <div class="USerName">
+            Astrid Mordrickson
+          </div>
+        </ion-row>
+      </ion-row>
+      <div class="botonera" style="padding:10px; width:100% !important;">
+
+        <div class="container" [routerLink]= "['/users']">
+          <ion-row class="UyaVer" align="left"  style="border:none; color:black; --background:none; width:100%;" large class="botonMenu" ion-button icon-only menuToggle>
+            <ion-col size="1" style="display:flex; justify-content:left;">
+              <ion-icon style="display:flex; justify-content:left;" align="left" class="varIcons" name="heart"></ion-icon>
+            </ion-col>
+            <ion-col class="textButt" style="display:flex; justify-content:left;">
+              Users
+            </ion-col>
+          </ion-row>
+        </div>        
+        
+        <div class="container" [routerLink]= "['/home']">
+          <ion-row class="UyaVer" align="left"  style="border:none; color:black; --background:none; width:100%;" large class="botonMenu" ion-button icon-only menuToggle>
+            <ion-col size="1" style="display:flex; justify-content:left;">
+              <ion-icon style="display:flex; justify-content:left;" align="left" class="varIcons" name="log-out"></ion-icon>
+            </ion-col>
+            <ion-col class="textButt" style="display:flex; justify-content:left;">
+              log out
+            </ion-col>
+          </ion-row>
+     
+        </div>
+
+        <div class="container" [routerLink]= "['/report']">
+          <ion-row class="UyaVer" align="left"  style="border:none; color:black; --background:none; width:100%;" large class="botonMenu" ion-button icon-only menuToggle>
+            <ion-col size="1" style="display:flex; justify-content:left;">
+             
+            </ion-col>
+            <ion-col class="textButt" style="display:flex; justify-content:left;">
+              report
+            </ion-col>
+          </ion-row>
+        </div>
+    </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12">
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<script>
+  function deployMenu(){
+    document.getElementById('menuSide').css.display = '';
+  }
+</script>
